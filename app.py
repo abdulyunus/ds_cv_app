@@ -19,7 +19,7 @@ col1, col2 = st.columns([6, 1])
 with col2:
     theme_toggle = st.toggle(
         "🌙 Dark Mode",
-        value=(st.session_state.theme == "dark")
+        value=(st.session_state.theme == "light")
     )
 
 st.session_state.theme = "dark" if theme_toggle else "light"
@@ -366,4 +366,5 @@ st.markdown(
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
