@@ -11,96 +11,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# ---------------- THEME TOGGLE ----------------
-if "theme" not in st.session_state:
-    st.session_state.theme = "dark"
-
-col1, col2 = st.columns([6, 1])
-with col2:
-    theme_toggle = st.toggle(
-        "🌙 Dark Mode",
-        value=(st.session_state.theme == "light")
-    )
-
-st.session_state.theme = "dark" if theme_toggle else "light"
-
-# ---------------- DYNAMIC THEME CSS ----------------
-if st.session_state.theme == "dark":
-    theme_css = """
-    <style>
-    .stApp {
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-        color: #ffffff;
-    }
-    h1, h2, h3, h4 {
-        color: #00e5ff;
-    }
-    p, li, span {
-        color: #e0f7fa;
-    }
-    div[data-testid="stExpander"] {
-        background-color: rgba(255, 255, 255, 0.05);
-        border-radius: 10px;
-    }
-    div[data-testid="metric-container"] {
-        background-color: rgba(0, 229, 255, 0.15);
-        border-radius: 12px;
-        padding: 15px;
-    }
-    button, .stButton>button {
-        background-color: #00e5ff !important;
-        color: #003344 !important;
-        border-radius: 10px;
-        font-weight: bold;
-        border: none;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-    button:hover, .stButton>button:hover {
-        background-color: #26c6da !important;
-        color: #003344 !important;
-    }
-    </style>
-    """
-else:
-    theme_css = """
-    <style>
-    .stApp {
-        background-color: #f7f9fb;
-        color: #1a1a1a;
-    }
-    h1, h2, h3, h4 {
-        color: #003366;
-    }
-    p, li, span {
-        color: #333333;
-    }
-    div[data-testid="stExpander"] {
-        background-color: #ffffff;
-        border-radius: 10px;
-        border: 1px solid #e0e0e0;
-    }
-    div[data-testid="metric-container"] {
-        background-color: #e3f2fd;
-        border-radius: 12px;
-        padding: 15px;
-    }
-    button, .stButton>button {
-        background-color: #1976d2 !important;
-        color: #ffffff !important;
-        border-radius: 10px;
-        font-weight: bold;
-        border: none;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-    button:hover, .stButton>button:hover {
-        background-color: #003366 !important;
-        color: #ffffff !important;
-    }
-    </style>
-    """
-
-st.markdown(theme_css, unsafe_allow_html=True)
-
 # ---------------- HEADER ----------------
 st.markdown("""
     <h1 style='text-align: center; font-size: 3rem; margin-bottom: 0.2em;'>Abdul Yunus</h1>
@@ -338,6 +248,7 @@ fig.update_layout(
         gridwidth=1
     )
 )
+
 # ---------------- STREAMLIT PROJECT LINKS ----------------
 st.header("🔗 Online Demo Projects")
 st.markdown(
@@ -374,6 +285,7 @@ st.markdown(
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
