@@ -215,7 +215,7 @@ st.header("📊 Experience Snapshot")
 
 metrics = st.columns(3)
 metrics[0].metric("Years Experience", "10+", "📈")
-metrics[1].metric("Industry worked", "Retail | Supply Chain")
+metrics[1].metric("Industry worked / Domain", "Retail | Supply Chain")
 metrics[2].metric("Team Size Led", "7")
 
 # ---------------- EXPERIENCE ----------------
@@ -366,6 +366,7 @@ st.markdown(
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
