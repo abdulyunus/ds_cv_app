@@ -198,7 +198,7 @@ skills_df = pd.DataFrame({
         "Forecasting",
         "Python",
         "Snowflake",
-        "streamlit",
+        "Streamlit",
         "Data Engineering"
     ],
     "Strength": [8.0, 7.5, 7.5, 7.0, 5.0, 6.5]
@@ -292,6 +292,7 @@ st.markdown("""
     <hr style='border: 0; border-top: 4px solid #1976d2; margin: 2em 0;'/>
 """, unsafe_allow_html=True)
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
