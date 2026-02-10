@@ -249,6 +249,9 @@ fig.update_layout(
     )
 )
 
+st.plotly_chart(fig, use_container_width=True)
+st.markdown("</div>", unsafe_allow_html=True)
+
 # ---------------- STREAMLIT PROJECT LINKS ----------------
 st.header("🔗 Online Demo Projects")
 st.markdown(
@@ -285,6 +288,7 @@ st.markdown(
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
