@@ -116,9 +116,9 @@ with col3:
     st.markdown(
         """
         - Python, R, PySpark  
-        - Snowflake, SQL Server  
+        - Snowflake, SQL Server, Oracle
         - Kafka, Azure Functions  
-        - Streamlit, Docker  
+        - Streamlit, Power BI, Docker  
         """
     )
 
@@ -292,6 +292,7 @@ st.markdown("""
     <hr style='border: 0; border-top: 4px solid #1976d2; margin: 2em 0;'/>
 """, unsafe_allow_html=True)
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
