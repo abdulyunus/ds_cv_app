@@ -331,12 +331,16 @@ st.plotly_chart(fig, use_container_width=True)
 st.markdown("</div>", unsafe_allow_html=True)
 
 # ---------------- STREAMLIT PROJECT LINKS ----------------
-st.header("🔗 Streamlit Projects")
+st.header("🔗 Online Demo Projects")
 st.markdown(
     """
 - [Data Analysis Tool](https://genai-data-analysis-test.streamlit.app//) – A Streamlit app performing data analysis on csv data.
 - [Exploratory Data Analysis](https://eda-healthcare-mohk.streamlit.app//) –  A Streamit app to perform exploratory data analysis.
 - [Classification Model - Iris data ](https://iris-ml-system-profile-1.streamlit.app//) – A Streamlit app that perform the classification on the Iris dataset.
+
+**R Programming - Old codes**
+- [Bike Sharing Assignment](https://rpubs.com/abdul_yunus/Bike_Renting_Assignment) - Analyzing bike sharing data using R.
+- [Clustering ](https://rpubs.com/abdul_yunus/Kmeans_Clustering) - Clustering analysis using K-means algorithm.
 """
 )
 
@@ -362,3 +366,4 @@ st.markdown(
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
