@@ -201,7 +201,7 @@ skills_df = pd.DataFrame({
         "streamlit",
         "Data Engineering"
     ],
-    "Strength": [8.0, 7.5, 8.0, 7.5, 6.0, 6.5]
+    "Strength": [8.0, 7.5, 7.5, 7.0, 5.0, 6.5]
 })
 
 # Use a color map for more vibrant, supportive colors
@@ -292,6 +292,7 @@ st.markdown("""
     <hr style='border: 0; border-top: 4px solid #1976d2; margin: 2em 0;'/>
 """, unsafe_allow_html=True)
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
