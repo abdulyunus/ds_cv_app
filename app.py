@@ -34,7 +34,9 @@ with col_contact2:
         </div>
     """, unsafe_allow_html=True)
 
-st.divider()
+st.markdown("""
+    <hr style='border: 0; border-top: 4px solid #1976d2; margin: 2em 0;'/>
+""", unsafe_allow_html=True)
 
 # ---------------- DOWNLOAD CV ----------------
 st.markdown("### 📄 Download CV")
@@ -286,8 +288,11 @@ st.markdown(
 )
 
 # ---------------- FOOTER ----------------
-st.divider()
+st.markdown("""
+    <hr style='border: 0; border-top: 4px solid #1976d2; margin: 2em 0;'/>
+""", unsafe_allow_html=True)
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
