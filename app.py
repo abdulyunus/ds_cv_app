@@ -296,7 +296,7 @@ skills_df = pd.DataFrame({
 color_map = px.colors.qualitative.Plotly
 bar_colors = [color_map[i % len(color_map)] for i in range(len(skills_df))]
 
-# Create a slimmer bar chart
+# Create a slimmer bar chart with sharper axis values
 fig = px.bar(
     skills_df,
     x="Skill Area",
@@ -310,26 +310,34 @@ fig.update_traces(
     textfont_size=16,
     marker_line_color='#222',
     marker_line_width=2,
-    width=0.4  # Make bars slimmer
+    width=0.4
 )
 fig.update_layout(
     plot_bgcolor='rgba(0,0,0,0)',
     paper_bgcolor='rgba(0,0,0,0)',
     font=dict(size=16),
     legend=dict(title='', orientation='h', yanchor='bottom', y=1.02, xanchor='center', x=0.5),
-    bargap=0.35  # Increase gap between bars
+    bargap=0.35,
+    xaxis=dict(
+        tickfont=dict(size=10, color='#222', family='Arial Black'),
+        title_font=dict(size=17, color='#111', family='Arial Black'),
+        tickangle=0,
+        showline=True,
+        linewidth=2,
+        linecolor='#222',
+        mirror=True
+    ),
+    yaxis=dict(
+        tickfont=dict(size=10, color='#222', family='Arial Black'),
+        title_font=dict(size=17, color='#111', family='Arial Black'),
+        showline=True,
+        linewidth=2,
+        linecolor='#222',
+        mirror=True,
+        gridcolor='#bbb',
+        gridwidth=1
+    )
 )
-
-# Add a bordered cover for the chart
-st.markdown(
-    """
-    <div style='border: 2px solid #1976d2; border-radius: 16px; padding: 24px; background: rgba(230,245,255,0.15); margin-bottom: 2em;'>
-    """,
-    unsafe_allow_html=True
-)
-st.plotly_chart(fig, use_container_width=True)
-st.markdown("</div>", unsafe_allow_html=True)
-
 # ---------------- STREAMLIT PROJECT LINKS ----------------
 st.header("🔗 Online Demo Projects")
 st.markdown(
@@ -366,6 +374,7 @@ st.markdown(
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
