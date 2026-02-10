@@ -237,8 +237,8 @@ with st.expander("🔹 Lead Software Engineer – Data Science | Blue Yonder (20
 with st.expander("🔹 Senior Data Analyst | EPAM Systems (2017–2019)"):
     st.markdown(
         """
-- Delivered **demand forecasting** for large food chains in North America  
-- Built **LTO & promotional forecasts** using time-series models  
+- Developed **Regional Event Demand Forecasting** model  for large food chains in North America  
+- Built **Limited Time Offer & promotional forecasts** using time-series models
 - Conducted **trend, seasonality, and EDA** to improve forecast accuracy  
 - Collaborated cross-functionally to refine business assumptions  
 """
@@ -247,7 +247,7 @@ with st.expander("🔹 Senior Data Analyst | EPAM Systems (2017–2019)"):
 with st.expander("🔹 Senior Executive – Data Science | Nielsen (2015–2017)"):
     st.markdown(
         """
-- Led **retail universe estimation** (numeric & volumetric)  
+- Led **retail universe estimation** (numeric & volumetric)  - Market Research Project
 - Built **predictive sales & category forecasting models**  
 - Designed **stratified sampling & clustering-based samples**  
 - Presented insights to global stakeholders across **MENA**  
@@ -289,7 +289,7 @@ skills_df = pd.DataFrame({
         "streamlit",
         "Data Engineering"
     ],
-    "Strength": [90, 85, 85, 85, 80, 80]
+    "Strength": [8.0, 7.5.0, 8.5, 8.5, 8.0, 6.5]
 })
 
 # Use a color map for more vibrant, supportive colors
@@ -366,5 +366,6 @@ st.markdown(
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
