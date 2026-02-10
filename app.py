@@ -37,7 +37,7 @@ with col_contact2:
 st.divider()
 
 # ---------------- DOWNLOAD CV ----------------
-st.markdown("### 📄 Download Resume")
+st.markdown("### 📄 Download CV")
 
 cv_file = None
 cv_filename = None
@@ -288,6 +288,7 @@ st.markdown(
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("📊 Built with Streamlit | Data Science Portfolio CV")
+
 
 
 
